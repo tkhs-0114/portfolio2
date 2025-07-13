@@ -5,7 +5,7 @@ import Select from './component/select';
 import TextBox from './component/textbox';
 
 function App() {
-  const categories = ['frontend', 'backend', 'others'];
+  const categories = ['FrontEnd', 'BackEnd', 'Others'];
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(-1);
 
   return (
@@ -14,7 +14,7 @@ function App() {
         src={`${process.env.PUBLIC_URL}/title.png`}
         className="w-10/12 max-w-lg mx-auto py-10"
       />
-      <Window color="gemini-blue-light" className="mx-auto">
+      <Window color="gemini-blue-light">
         <TextBox
           text={`
         ここに文字を書いていく
@@ -23,14 +23,14 @@ function App() {
         `}
         />
       </Window>
-      <Window color="gemini-green-light" className="h-72 mx-auto">
+      <Window color="gemini-green-light" className="h-72 ">
         <Select list={categories} onSelect={setCurrentCategoryIndex} />
         {currentCategoryIndex == 0 && (
           <>
             <Skill
               name="JavaScript"
               state="Completed"
-              time={2}
+              time={1}
               date="2020/04"
             />
             <Skill
@@ -55,28 +55,34 @@ function App() {
             <Skill
               name="JavaScript"
               state="Completed"
-              time={2}
+              time={1}
               date="2020/04"
             />
-            <Skill name="Pytohn" state="Completed" time={3} date="2022/04" />
-            <Skill name="SQL" state="Completed" time={4} date="2024/04" />
-            <Skill name="FastAPI" state="Learning" time={0} date="2022/04" />
+            <Skill name="Pytohn" state="Completed" time={2} date="2022/04" />
+            <Skill name="SQL" state="Completed" time={4} date="2023/04" />
+            <Skill name="Flask" state="Stop" time={3} date="2023/08" />
+            <Skill name="FastAPI" state="Learning" time={0} date="2024/10" />
             <Skill
               name="RubyonRails"
               state="Learning"
               time={0}
-              date="2022/04"
+              date="2025/03"
             />
-            <Skill name="Go" state="Learning" time={0} date="2022/04" />
+            <Skill name="Go" state="Learning" time={0} date="2025/06" />
           </>
         )}
         {currentCategoryIndex == 2 && (
           <>
-            <Skill name="Git" state="Completed" time={1} date="2019/01" />
-            <Skill name="Docker" state="Learning" time={0} date="2023/09" />
-            <Skill name="Linux" state="Completed" time={5} date="2018/01" />
+            <Skill name="Windows" state="Completed" time={1} date="2017/04" />
+            <Skill name="Linux" state="Completed" time={3} date="2023/04" />
+            <Skill name="Git" state="Completed" time={4} date="2023/04" />
+            <Skill name="Docker" state="Completed" time={6} date="2024/08" />
+            <Skill name="Mac" state="Learning" time={0} date="2025/03" />
           </>
         )}
+      </Window>
+      <Window color="gemini-yellow-light">
+        <h1 className="text-white">こんなの作りましたの枠</h1>
       </Window>
     </div>
   );
