@@ -17,12 +17,10 @@ export default function TextBox({ text }: TextBoxProps) {
     return () => clearInterval(interval);
   }, []);
 
-  console.log(text);
   const printText = text
     .split('\n')
     .map((t) => t.trim())
     .slice(1, -1);
-  console.log(printText);
   return (
     <div className="bg-gray-800 w-11/12">
       <div></div>

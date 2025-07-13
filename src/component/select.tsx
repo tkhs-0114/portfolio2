@@ -18,7 +18,7 @@ export default function Select({ list, onSelect }: SelectProps) {
             setIndex(i);
           }}
         >
-          {`${index == i ? '> ' : ''}${item}`}
+          {`${index == i ? '>' : ''}${item}`}
         </button>
       ))}
     </div>
