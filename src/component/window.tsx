@@ -12,12 +12,16 @@ type WindowColor =
 
 interface WindowProps {
   color: WindowColor;
+  className?: string;
   children: React.ReactNode;
 }
 
-export default function Window({ color, children }: WindowProps) {
+export default function Window({ color, children, className }: WindowProps) {
   return (
-    <div className={`border-2 rounded-md p-4 border-${color}`}>{children}</div>
+    <div
+      className={`border-2 rounded-md p-4 m-4 border-${color} ${className} max-w-md w-10/12`}
+    >
+      {children}
+    </div>
   );
 }
-

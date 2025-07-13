@@ -28,5 +28,13 @@ module.exports = {
     'border-gemini-red-light',
     'border-gemini-yellow-light',
     'border-gemini-green-light',
+    'text-gemini-blue',
+    'text-gemini-red',
+    'text-gemini-yellow',
+    'text-gemini-green',
+    'text-gemini-blue-light',
+    'text-gemini-red-light',
+    'text-gemini-yellow-light',
+    'text-gemini-green-light',
   ],
 }

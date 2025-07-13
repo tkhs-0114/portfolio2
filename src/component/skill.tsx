@@ -29,7 +29,7 @@ export default function Skill({ name, date, state, time }: SkillProps) {
     };
   }, []);
   return (
-    <div className="flex items-center text-lg w-80">
+    <div className="flex items-center text-lg">
       <div className="w-8">
         <Load duration={time} isComplete={isComplete} />
       </div>
