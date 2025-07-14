@@ -16,6 +16,15 @@ module.exports = {
         'gemini-yellow-light': '#FFF9C4',
         'gemini-green-light': '#C8E6C9',
       },
+      animation: {
+        blink: 'blink 1s step-end infinite',
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { backgroundColor: 'transparent' },
+          '50%': { backgroundColor: '#A0AEC0' }, // gray-400
+        },
+      },
     },
   },
   plugins: [],

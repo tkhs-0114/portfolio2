@@ -8,7 +8,7 @@ const stateColor = {
   Stop: 'gemini-red',
 };
 
-interface SkillProps {
+export interface SkillProps {
   name: string;
   date: string;
   state: SkillState;
