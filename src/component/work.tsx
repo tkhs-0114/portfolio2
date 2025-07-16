@@ -12,7 +12,9 @@ export default function Work({ user, date, title }: WorkProps) {
     <div className="flex text-white">
       <div className="w-16">{user}</div>
       <div className="w-20">{date}</div>
-      <div className="underline">{title}</div>
+      <button className="underline underline hover:no-underline ">
+        {title}
+      </button>
     </div>
   );
 }

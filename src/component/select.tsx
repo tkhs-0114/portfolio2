@@ -12,7 +12,7 @@ export default function Select({ list, onSelect }: SelectProps) {
       {list.map((item, i) => (
         <button
           key={i}
-          className={`${index != i ? 'text-ubuntu bg-white' : 'text-white'} underline px-2`}
+          className={`${index != i ? 'text-ubuntu bg-white' : 'text-white'} underline hover:no-underline px-2`}
           onClick={() => {
             onSelect(i);
             setIndex(i);
