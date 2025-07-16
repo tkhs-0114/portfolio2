@@ -24,7 +24,7 @@ export default function Works({ works }: WorksProps) {
     setDisplay((prev) => [
       ...prev,
       <div key={`cat-${prev.length}`} className="text-white">
-        {text}
+        {text && text.split('\n').map((str) => <div>{str}</div>)}
       </div>,
     ]);
     setDisplay((prev) => [
