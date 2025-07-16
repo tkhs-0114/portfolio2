@@ -12,7 +12,7 @@ export default function VimBox({ text, name }: VimBoxProps) {
     .map((t) => t.trim())
     .slice(1, -1);
   return (
-    <div className="bg-gray-800 w-11/12">
+    <div className="bg-gray-800 w-11/12 bg-opacity-70 ">
       <div></div>
       <div className="text-white">
         {printText.map((pt, i) => (
@@ -31,10 +31,16 @@ export default function VimBox({ text, name }: VimBoxProps) {
             <BlinkingCursor />
           </div>
         </div>
-        <div className="w-full text-gemini-blue bg-gray-600">~</div>
-        <div className="w-full text-gemini-blue bg-gray-600">~</div>
+        <div className="w-full text-gemini-blue bg-gray-600 bg-opacity-70">
+          ~
+        </div>
+        <div className="w-full text-gemini-blue bg-gray-600 bg-opacity-70">
+          ~
+        </div>
       </div>
-      <div className="bg-yellow-100 w-full text-black">{name}</div>
+      <div className="bg-yellow-100 w-full text-black bg-opacity-70">
+        {name}
+      </div>
     </div>
   );
 }

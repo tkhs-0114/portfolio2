@@ -19,7 +19,7 @@ interface WindowProps {
 export default function Window({ color, children, className }: WindowProps) {
   return (
     <div
-      className={`border-2 rounded-md p-4 m-8 mx-auto border-${color} ${className} max-w-lg w-11/12 bg-ubuntu-terminal `}
+      className={`border-2 rounded-md p-4 m-8 mx-auto border-${color} ${className} max-w-lg w-11/12 bg-ubuntu-terminal bg-opacity-50`}
     >
       {children}
     </div>

@@ -4,13 +4,15 @@ import VimBox from './component/vimbox';
 import Select from './component/select';
 import Skills from './component/skills';
 import Works from './component/works';
+import Background from './component/background';
 
 function App() {
   const categories = ['FrontEnd', 'BackEnd', 'Others'];
   const [currentCategoryIndex, setCurrentCategoryIndex] = useState(-1);
 
   return (
-    <div className="min-h-screen bg-ubuntu-terminal p-1">
+    <div className="min-h-screen p-1 ">
+      <Background />
       <img
         src={`${process.env.PUBLIC_URL}/title.png`}
         className="w-10/12 max-w-lg mx-auto py-10"
@@ -19,7 +21,10 @@ function App() {
         <VimBox
           name="/home/profile.txt [+]"
           text={`
-        ここに文字を書いていく
+        自己紹介
+        情報系学科の大学3年生です
+        バックエンド・フロントエンド・競技プログラミングから３Ｄグラフィックスまで幅広いことを分野を日々学習しています。
+        ハッカソンへの多数参加経験やコンピュータ部での部長経験など個人開発だけでなくチーム開発にも精力的にチャレンジしています。
         自己紹介的な文章を書く
         ここに長文で長くなってしまった時に適切な場所で折り返すことが可能か確認する
         `}
