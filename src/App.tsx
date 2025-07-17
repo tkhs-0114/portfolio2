@@ -141,18 +141,67 @@ function App() {
             },
             {
               user: 'solo',
-              date: '2023/04',
-              title: 'Auther_text',
+              date: '2025/05',
+              title: 'ポートフォリオ',
               text: `
-                別のテキスト１
+              就職活動に向けて作成した 一つ目のポートフォリオ
+              読み込みに5秒ほど掛かることやデザインがイマイチな事など至らない点が多かった。
                 `,
             },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
-            { user: 'solo', date: '2023/04', title: 'React_tutor', text: `` },
+            {
+              user: 'team',
+              date: '2025/03',
+              title: 'KC3-Hack 2025',
+              text: `
+                KC3(関西情報系学生団体交流会)が主催するハッカソンに参加
+                Next.jsを用いて地図上に楽曲と登録して近づくと再生されるWebアプリケーションを作成した。
+                `,
+            },
+            {
+              user: 'solo',
+              date: '2025/02',
+              title: 'VScode拡張機能',
+              text: `
+                VScodeの拡張機能を作成した
+                VScodeのサイドバーが展開する際にシームレスに開くようにアニメーションを適用する拡張機能。
+                `,
+            },
+            {
+              user: 'solo',
+              date: '2024/11',
+              title: 'RunCat-CUI',
+              text: `
+                RunCatのCUI版を作ってみた
+                CPUの使用率に合わせて猫が走るアプリRunCatのCUIバージョンを作成した。
+                `,
+            },
+            {
+              user: 'team',
+              date: '2024/10',
+              title: 'モバイルオーダー',
+              text: `
+              モバイルオーダーアプリを作った。
+              大学の文化祭で出店するフランクフルトをオンラインで販売するためのモバイルオーダーシステムを開発した。
+              `,
+            },
+            {
+              user: 'team',
+              date: '2024/09',
+              title: '近畿大学ハッカソン',
+              text: `
+              近畿大学主催UnionHackに参加
+              企業賞を頂いた
+              `,
+            },
+            {
+              user: 'solo',
+              date: '2024/08',
+              title: 'KC3登壇',
+              text: `
+                KC3(関西情報系学生団体交流会)にて「１から始めるDocker入門」で登壇
+                docker composeを用いた開発用コンテナを作成する為のプロセスを紹介した。
+                `,
+            },
           ]}
         />
       </Window>
